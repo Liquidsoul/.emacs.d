@@ -104,10 +104,10 @@
         :v  "="   'align-regexp
         :nv "a"   'projectile-find-other-file
         :n  "b"   'counsel-bookmark               ; or 'helm-bookmarks
-        :n  "c"   'evil-avy-goto-char-2
+        :nv "c"   'evil-avy-goto-char-2
         :n  "B"   'bookmark-delete
         :n  "e"   'doom/flycheck-errors
-        :n  "j"   'evil-avy-goto-line
+        :nv "j"   'evil-avy-goto-line
         :n  "k"   'doom:docs-lookup
         :nv "l"   'doom/nlinum-toggle
         :nv "m"   'counsel-recentf                ; or 'helm-recentf
@@ -118,7 +118,7 @@
         :n  "R"   'doom/reset-theme
         :n  "s"   'yas-visit-snippet-file
         :n  "S"   'doom/yas-find-file
-        :n  "w"   'evil-avy-goto-word-1
+        :nv "w"   'evil-avy-goto-word-1
         ;; Quick quitting
         :nv "Q"   'evil-save-and-quit
         :nv "C-q" 'doom/kill-workgroup-and-quit
