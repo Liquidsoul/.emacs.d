@@ -50,5 +50,7 @@
   :mode ("\\.re?st$" . rst-mode)
   :config (def-builder! rst-mode rst-compile-pdf-preview))
 
+(setq default-input-method 'french-postfix)
+
 (provide 'module-text)
 ;;; module-text.el ends here
