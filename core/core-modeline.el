@@ -436,7 +436,13 @@ lines are selected, or the NxM dimensions of a block selection."
                               '(*media-info))
                              (t
                               '(list (*buffer-info)
-                                     "  %l:%c %p  "
+                                     "  %l:%c %p"
+                                     (if evil-input-method
+                                       (if (string= evil-input-method 'french-postfix)
+                                         " 🇫🇷"
+                                         " ✎")
+                                       "")
+                                     "  "
                                      (*selection-info)
                                      )))))
            (rhs ,(if id
