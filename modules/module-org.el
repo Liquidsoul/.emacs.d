@@ -27,6 +27,12 @@
 ;; Custom variables
 (defvaralias 'org-directory 'doom-org-dir)
 
+;; MobileOrg
+(defconst mood-mobile-org-dir
+  (expand-file-name "~/mobileorg")
+  "Where to push/pull mobile org notes")
+(setq org-mobile-directory mood-mobile-org-dir)
+
 (defvar doom-org-notes-dir (f-expand "notes" doom-org-dir)
   "The directory where the notes are kept")
 
