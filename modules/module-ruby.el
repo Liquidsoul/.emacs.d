@@ -2,7 +2,7 @@
 
 (use-package ruby-mode
   :mode ("\\.rb$" "\\.rake$" "\\.gemspec$" "\\.?pryrc$"
-         "/\\(Gem\\|Cap\\|Vagrant\\|Rake\\)file$")
+         "/\\(Gem\\|Cap\\|Vagrant\\|Rake\\|Fast\\|Pod\\)file$")
   :interpreter "ruby"
   :init (add-hook 'ruby-mode-hook 'flycheck-mode)
   :config
