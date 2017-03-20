@@ -11,6 +11,11 @@
             '(call-interactively 'counsel-find-file)
             )))))
 
+(defun insert-nbsp-char ()
+  "Insert a tab char. (ASCII 9, \t)"
+  (interactive)
+  (insert " "))
+
 (map! [f9]   'what-face
       ;; Essential
       "M-x"  'smex
@@ -71,6 +76,7 @@
       [A-left]            'backward-word
       [A-right]           'forward-word
       "A-SPC"             'just-one-space
+      :i "A-SPC"          'insert-nbsp-char
       "M-a"               'mark-whole-buffer
       "M-c"               'evil-yank
       "M-q"               'save-buffers-kill-emacs
