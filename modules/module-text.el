@@ -52,5 +52,19 @@
 
 (setq default-input-method 'french-postfix)
 
+;; Add some custom rules to the input method for french
+(with-temp-buffer
+  (activate-input-method "french-postfix") ;; the input method has to be triggered for `quail-package-alist' to be non-nil
+  (let ((quail-current-package (assoc "french-postfix" quail-package-alist)))
+   (quail-define-rules ((append . t))
+                       ("``" ["“"])
+                       ("`'" ["”"])
+                       ("?" [" ?"])
+                       ("!" [" !"])
+                       (";" [" ;"])
+                       (":" [" :"])
+                       ))
+  )
+
 (provide 'module-text)
 ;;; module-text.el ends here
