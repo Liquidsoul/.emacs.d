@@ -71,6 +71,15 @@
       :m "C-7"  (λ! (doom:switch-to-tab 6))
       :m "C-8"  (λ! (doom:switch-to-tab 7))
       :m "C-9"  (λ! (doom:switch-to-tab 8))
+      :m "M-1"  (λ! (doom:switch-to-tab 0))
+      :m "M-2"  (λ! (doom:switch-to-tab 1))
+      :m "M-3"  (λ! (doom:switch-to-tab 2))
+      :m "M-4"  (λ! (doom:switch-to-tab 3))
+      :m "M-5"  (λ! (doom:switch-to-tab 4))
+      :m "M-6"  (λ! (doom:switch-to-tab 5))
+      :m "M-7"  (λ! (doom:switch-to-tab 6))
+      :m "M-8"  (λ! (doom:switch-to-tab 7))
+      :m "M-9"  (λ! (doom:switch-to-tab 8))
 
       [M-backspace]       'doom/backward-kill-to-bol-and-indent
       [A-left]            'backward-word
